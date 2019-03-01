@@ -10,6 +10,9 @@ let inputValues = '';
 function updateText(event) {
   // updates input field when event.target is a number or operator
   inputValues += event.target.textContent;
+    if (event.target.classList.contains('clear')) {
+      inputValues='';
+    }
   input.textContent = inputValues;
 }
 
@@ -44,7 +47,12 @@ function calculate() {
   document.addEventListener('click', e => {
     // holds each individual digit for the numbers
     // array holding actual numbers
-
+    if (e.target.classList.contains('clear')) {
+      updateText(e);
+      digits=0;
+      values=[];
+      operations=[];
+    }
     if (e.target.classList.contains('number')) {
       updateText(e);
       digits += e.target.textContent;
