@@ -47,6 +47,10 @@ a{
   height: 50vh;
 }
 
+.container img{
+  max-height:100%;
+}
+
 /* Project Grid */
 
 .grid-wrapper{
