@@ -16,6 +16,28 @@ body{
   list-style: none;
   font-size: .7em;
   margin: 0;
+  color: white;
+}
+
+/* For list items in the shopping calculator app */
+#list {
+  background-color: rgb(95, 223, 147);
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  top: 100px;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 100px;
 }
 
 /* This changes the font sizes when view port is small */
@@ -152,4 +174,47 @@ footer{
     background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+
+/* For Calculator app */
+#calculator{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  position: relative;
+  top: 100px;
+}
+
+#numbers{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#operators{
+  display: grid;
+}
+
+.top{
+  background-color: rgb(95, 223, 147);
+  color: black;
+  border: 1px solid grey;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.btn{
+  background-color: rgb(96, 178, 213);
+  color: black;
+  border: 1px solid grey;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.operator{
+  background-color: rgb(4, 86, 122);
+  color: black;
+  border: 1px solid grey;
+  border-radius: 50%;
+  font-size: 20px;
 }
